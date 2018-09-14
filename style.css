@@ -1,0 +1,188 @@
+html {
+	position: relative;
+	height: 100%;
+	font-family: "Ubuntu";
+	color: #ffffff;
+}
+
+p {
+	font-size: 2.0em;
+}
+
+button {
+	font-family: "Ubuntu";
+}
+
+#title {
+	font-size: 4.0em;
+	padding-bottom: 15px;
+}
+
+#layer_menu button {
+	width: 15%;
+}
+
+#layer_game_menu button:not(#btn_back) {
+	width: 10%;
+}
+
+.fancybtn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  /*border-radius: 6px;*/
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.fancybtn:hover {
+  background: #54baff;
+  text-decoration: none;
+}
+
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	background-image: url("images/bg.jpg");
+}
+
+#btn_back {
+	margin-right: 90%;
+	margin-top: 1%;
+	position: relative;
+	display: inline;
+}
+
+#popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 70px 125px;
+	transform: translate(-50%, -50%);
+	background-color: rgb(39,92,118);
+}
+
+#points {
+	position: relative;
+	float: left; /*ha centerbe kerÃ¼l, akkor elrontja a szÃ­vek megjelenÃ©sÃ©t*/
+}
+
+.bed {
+	position: absolute;
+	text-align: center;
+	width: 98%;
+	height: 98%;
+	top:1%;
+	left: 1%;
+	/*background-color: pink;*/
+	z-index: -3;
+}
+
+.btn_bone {
+	width: 160px;
+	height: 40px;
+	margin: 10px 10px 10px 10px;
+   border: 0px solid #000000;
+   background: #999999;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#999999));
+   background: -webkit-linear-gradient(top, #ffffff, #999999);
+   background: -moz-linear-gradient(top, #ffffff, #999999);
+   background: -ms-linear-gradient(top, #ffffff, #999999);
+   background: -o-linear-gradient(top, #ffffff, #999999);
+   background-image: -ms-linear-gradient(top, #ffffff 0%, #999999 100%);
+   padding: 6px 12px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   text-shadow: #000000 0 1px 0;
+   color: #000000;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+}
+.btn_bone_rplc {
+	width: 160px;
+	height: 40px;
+	margin: 10px 10px 10px 10px;
+   border: none;
+   background: transparent;
+   padding: 6px 12px;
+   color: transparent;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+.btn_bone:hover {
+   border: 0px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #3d59b8;
+   background: -webkit-gradient(linear, left top, left bottom, from(#006fff), to(#3d59b8));
+   background: -webkit-linear-gradient(top, #006fff, #3d59b8);
+   background: -moz-linear-gradient(top, #006fff, #3d59b8);
+   background: -ms-linear-gradient(top, #006fff, #3d59b8);
+   background: -o-linear-gradient(top, #006fff, #3d59b8);
+   background-image: -ms-linear-gradient(top, #006fff 0%, #3d59b8 100%);
+   color: #fff;
+   }
+
+.hidden {
+	display: none;
+}
+
+/*kÃ¶zÃ©pre teszi a game_menut*/
+p.gm {
+	position: relative;
+	margin:auto;
+	margin-top: 10%;
+}
+
+/*vÃ©gleges designnÃ¡l lehet hogy javÃ­tani kell*/
+/*fÃ¼ggÅ‘legesen teszi kÃ¶zÃ©pre*/
+div.center { 
+	position: relative;
+	top: 30%;
+}
+
+table.right {
+	float: right;
+}
+
+table.game_header {
+	width: 100%;
+	height: 100px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	/*table-layout: fixed;*/
+	/*border: 1px solid white;
+	border-collapse: collapse;*/
+}
+
+table.full_width {
+	width: 100%;
+}
+
+table.result_center{ /*results center, vÃ­zszintesen teszi be kÃ¶zÃ©pre*/
+	margin-left: 30%;
+}
+
+#table_results td {
+	padding-left: 25px;
+	padding-right: 25px;
+}

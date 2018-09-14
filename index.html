@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Csontdaráló</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link rel="shortcut icon" href="images/chont.png">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div id="layer_main" class="bed">
+			<div id="layer_menu" class="center">
+				<h1 id="title">Csontdaráló</h1>
+			</div>
+
+			<div id="layer_game">
+				<div id="layer_game_menu">
+					<table class="game_header">
+						<tr><td><button id="btn_back" class="fancybtn" onclick="onBackClick(event)" style="float: left;">Vissza</button></td></tr>
+					</table>
+					
+						<p class="gm">Melyik testrészt szeretnéd gyakorolni?</p><br>
+						<button id="btn_hand" class="fancybtn" onclick="onBodyPartClick(event)">Kéz</button><br>
+						<button id="btn_skull" class="fancybtn" onclick="onBodyPartClick(event)">Koponya</button><br>
+						<button id="btn_foot" class="fancybtn" onclick="onBodyPartClick(event)">Lábfej</button><br>
+						<!-- <button id="btn_arm" class="fancybtn" onclick="onBodyPartClick(event)" disabled="true">Kar</button><br>
+						<button id="btn_leg" class="fancybtn" onclick="onBodyPartClick(event)" disabled="true">Láb</button><br>
+						<button id="btn_torso" class="fancybtn" onclick="onBodyPartClick(event)" disabled="true">Törzs</button> -->
+				</div>
+
+				<div id="layer_game_bodypart">
+					<table class="game_header">
+						<tr>
+							<td style="padding-top: 4px; padding-left: 2px;"><button id="btn_back" class="fancybtn" onclick="onBackClick(event)">Vissza</button></td>
+							<td><p><span id="time">0:0:0</span></p></td>
+							<td><p id="points">Pontszám: </p></td>
+
+							<td>
+								<div id="heart_container">
+									<table class="right">
+									<tr id="heart_row">
+										<!-- ide JS generálja a szívecskéket -->
+									</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<table class="full_width">
+						<tr>
+							<td id="parentLeft">
+								<!-- ide JS generál táblázatot -->
+							</td>
+							<td id="parentRight">
+								<canvas id="canvas" width="600" height="600"></canvas>
+							</td>
+						</tr>
+					</table>
+					<!--ha ez a gomb itt van, akkor nem lehet játékkal nyerni fyi-->
+					<!--<button onclick="gameWon()">press;)</button>-->
+				</div>
+
+			<div id="layer_results">
+				<table class="game_header">
+					<tr><td><button id="btn_back" class="fancybtn" onclick="onBackClick(event)" style="float: left;">Vissza</button></td></tr>
+				</table>
+				<table id="table_results" class="result_center">
+					<tr>
+						<td>Testrész</td>
+						<td>Idő</td>
+						<td>Megmaradt életek</td>
+						<td>Pontszám</td>
+					</tr>
+				</table>
+				<p id="emptytext">Még nincsenek eredmények!</p>
+			</div>
+
+			<div id="layer_help">
+				<table class="game_header">
+					<tr><td><button id="btn_back" class="fancybtn" onclick="onBackClick(event)" style="float: left;">Vissza</button></td></tr>
+				</table>
+
+				<table id="handTableHelp" class="full_width">
+					<tr>
+						<td id="parentHandLeftHelp" style="width: 100%">
+							Kéz						
+						</td>
+						<td id="parentHandRightHelp">
+							<canvas id="canvasHandHelp" width="600" height="600"></canvas>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
